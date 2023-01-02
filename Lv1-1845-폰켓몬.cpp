@@ -6,7 +6,11 @@
 #include <set>
 using namespace std;
 
-
+/// 문제링크
+/// https://school.programmers.co.kr/learn/courses/30/lessons/1845
+///
+/// 해쉬를 응용하는 문제이다. C++ 에서 중복을 허용하지 않는 데이터구조(set)를 응용했다.
+///
 int solution(vector<int> nums)
 {
     int answer = 0;
