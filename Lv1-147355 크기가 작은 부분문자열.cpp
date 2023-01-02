@@ -9,9 +9,11 @@
 using namespace std;
 
 /// <summary>
-/// 후기)
-/// 처음시도했을때 예시는 다 맞았지만 제출해보니 (signal: aborted (core dumped)) 로 틀렸다.
-/// 메모리관련 에러인데 질문글에 더 살펴보니 값이 int가 담을수 있는 값보다 클수도 있어 long으로 수정하니 맞았다.
+/// 문제 링크
+/// https://school.programmers.co.kr/learn/courses/30/lessons/147355
+/// 후기
+/// 처음시도했을때 예시는 다 맞았지만 제출해보니 (signal: aborted (core dumped)) 로 틀렸다
+/// 메모리관련 에러인데 질문글에 더 살펴보니 '값이 int가 담을수 있는 최댓값보다 클 수도 있다' 해서 long으로 수정하니 맞았다
 /// </summary>
 /// <param name="t"></param>
 /// <param name="p"></param>
