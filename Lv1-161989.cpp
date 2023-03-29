@@ -8,6 +8,9 @@ using namespace std;
 
 /*
 https://school.programmers.co.kr/learn/courses/30/lessons/161989
+덧칠하기
+
+한번에 풀었으나 vector를 잘 다루지 못한 본인의 미숙으로 시간이 걸렸다, 분발하자.
 
 */
 
