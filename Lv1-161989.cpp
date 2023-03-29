@@ -12,6 +12,8 @@ https://school.programmers.co.kr/learn/courses/30/lessons/161989
 
 한번에 풀었으나 vector를 잘 다루지 못한 본인의 미숙으로 시간이 걸렸다, 분발하자.
 
+
+
 */
 
 
@@ -19,25 +21,24 @@ int solution(int n, int m, vector<int> section)
 {
     int answer = 0;
 
-    vector<bool> arr(n);
+    vector<bool> arr(n); // 초기화 bool 값(false)를 n개로 지닌 arr를 생성했다
     for (int i = 0; i < section.size() ; i++)
     {
-        int arrIndex = section[i] - 1;
+        int arrIndex = section[i] - 1; 
         arr[arrIndex] = true;
-
     }
+    // section의 원소을 arr에 대입하여 빈곳을 true값으로 줬다
     /*
     for (auto i : arr)
     {
         cout << i << endl;
     }
     */
-    // 기본값으로 초기화된 n개의 원소를 지닌 vector를 생성
 
     while (!section.empty())
     {
         //cout << "INDEX" << endl;
-        int index = section.front() - 1;
+        int index = section.front() - 1; 
        // cout << index << endl;
         
         if (arr[index])
@@ -61,6 +62,9 @@ int solution(int n, int m, vector<int> section)
             section.erase(section.begin());
         }
     }
+    // section이 없어지거나 검색값이 n값을 넘어설 때까지
+    // section를 루프해 arr이 거짓이면 section에서 지우고,
+    // 참이면 answer라는 카운트를 증가하고 현재 인덱스에서 m까지 더한 값까지 루프해 거짓으로 바꾼다
     /*
     cout << "After" << endl;
     for (auto i : arr)
